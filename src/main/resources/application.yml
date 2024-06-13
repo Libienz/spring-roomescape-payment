@@ -4,8 +4,8 @@ spring:
       enabled: true
   datasource:
     url: jdbc:mysql://192.168.1.96::3306/roomescape?serverTimezone=Asia/Seoul
-    username: root
-    password: roomescape123
+    username: libienz
+    password: libienz123
   jpa:
     show-sql: true
     properties:
