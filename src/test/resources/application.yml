@@ -3,13 +3,8 @@ spring:
     console:
       enabled: true
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.1.96::3306/roomescape?serverTimezone=Asia/Seoul
-    username: libienz
-    password: libienz123
+    url: jdbc:h2:mem:database
   jpa:
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
     properties:
       hibernate:
