@@ -8,8 +8,7 @@ spring:
     username: libienz
     password: libienz123
   jpa:
-    database: mysql
-    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     properties:
       hibernate:
