@@ -34,7 +34,7 @@ public interface ReservationRepository extends JpaRepository<Reservation, Long> 
             JOIN FETCH r1.member
             WHERE r1.member.id = :memberId
                 AND r1.id >= r2.id
-            GROUP BY r1
+            GROUP BY r1, p
             """)
     List<MyReservation> findMyReservations(@Param("memberId") Long memberId);
 
