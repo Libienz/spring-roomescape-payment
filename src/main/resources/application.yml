@@ -1,14 +1,13 @@
 spring:
-  h2:
-    console:
-      enabled: true
+  sql:
+    init:
+      mode: always
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://192.168.1.96:3306/roomescape?serverTimezone=Asia/Seoul
     username: libienz
     password: libienz123
   jpa:
-    defer-datasource-initialization: true
     database-platform: org.hibernate.dialect.MySQLDialect
     show-sql: true
     properties:
